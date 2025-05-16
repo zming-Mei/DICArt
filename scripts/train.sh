@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES="0" python DICArt/runners/DICArt_trainer.py \
+--data_path ArtImage-High-level/ArtImage \
+--sampling_steps 100 \
+--batch_size 96 \
+--eval_freq 10 \
+--n_epochs 200 \
+--seed 0 \
+--cate_id 1 \
+--saved_model_name Train11.17 \
+--pts_encoder pointnet2 \
+--pretrained_model_path_test  /home/zming/diffpose/6D/code/D3PM-Pose/scripts/save_6D_Repara/1000_epoch_model_epoch_279_angle_diff_7.6842_trans_diff_0.0551.pt \
+--eval 
