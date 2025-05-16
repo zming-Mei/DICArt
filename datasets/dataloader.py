@@ -8,7 +8,6 @@ sys.path.insert(0,os.getcwd())
 import mmengine
 import numpy as np
 import _pickle as cPickle
-sys.path.append('/home/zming/diffpose/6D/code/D3PM-Pose')
 from configs.config import get_config
 # from config.config import *
 # from datasets.data_augmentation import defor_2D, get_rotation
@@ -1163,11 +1162,9 @@ def get_data_loaders_from_cfg(cfg, data_type=['train', 'val', 'test']):
     return data_loaders
 
 if __name__ == '__main__':
-    # train_dataset = PoseDataset(source='ArtImage', mode='train',
-    #                             data_dir='/home/zming/diffpose/6D/code/ArtImage-High-level/ArtImage',cate_id=1)
-
+   
     from tqdm import tqdm
-    train_loader, val_loader = get_data_loaders(data_path='/home/zming/diffpose/6D/code/ArtImage-High-level/ArtImage')
+    train_loader, val_loader = get_data_loaders(data_path='')
     
         # 处理训练集
     for batch_sample in tqdm(train_loader):
@@ -1179,7 +1176,6 @@ if __name__ == '__main__':
         )
     #print(f"rotation shape:{}")
 
-    # 处理验证集
     for batch_sample in tqdm(val_loader):
         batch_sample = process_batch(
             batch_sample=batch_sample,
