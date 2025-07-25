@@ -30,7 +30,6 @@ pip install -e .
 ```
 
 
-
 - ### Compile pointnet2
 ``` bash
 cd networks/pts_encoder/pointnet2_utils/pointnet2
@@ -52,7 +51,3 @@ bash scripts/train.sh
 ``` bash
 bash scripts/eval.sh
 ```
-
-
-## License
-This project is released under the MIT license. See [LICENSE](LICENSE) for additional details.
