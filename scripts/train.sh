@@ -8,5 +8,5 @@ CUDA_VISIBLE_DEVICES="0" python DICArt/runners/DICArt_trainer.py \
 --cate_id 1 \
 --saved_model_name Train11.17 \
 --pts_encoder pointnet2 \
---pretrained_model_path   \
+--pretrained_model_path  \
 --eval 
